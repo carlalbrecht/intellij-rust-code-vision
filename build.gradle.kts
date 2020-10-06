@@ -57,10 +57,12 @@ intellij {
 
 //  Plugin Dependencies:
 //  https://www.jetbrains.org/intellij/sdk/docs/basics/plugin_structure/plugin_dependencies.html
-    setPlugins(*listOf(
-        "org.rust.lang:${intellijRustPluginVersion}",
-        "org.toml.lang:${tomlPluginVersion}"
-    ).toTypedArray())
+    setPlugins(
+        *listOf(
+            "org.rust.lang:$intellijRustPluginVersion",
+            "org.toml.lang:$tomlPluginVersion"
+        ).toTypedArray()
+    )
 }
 
 // Configure detekt plugin.
