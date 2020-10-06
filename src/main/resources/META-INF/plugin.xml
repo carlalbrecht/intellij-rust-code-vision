@@ -9,12 +9,17 @@
     <depends>org.rust.lang</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.carlalbrecht.intellijrustcodevision.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.carlalbrecht.intellijrustcodevision.services.MyProjectService"/>
+        <applicationService serviceImplementation="com.github.carlalbrecht.intellijrustcodevision.services.MyApplicationService" />
+        <projectService serviceImplementation="com.github.carlalbrecht.intellijrustcodevision.services.MyProjectService" />
     </extensions>
 
     <applicationListeners>
         <listener class="com.github.carlalbrecht.intellijrustcodevision.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
+                  topic="com.intellij.openapi.project.ProjectManagerListener" />
     </applicationListeners>
+
+    <projectListeners>
+        <listener class="com.github.carlalbrecht.intellijrustcodevision.listeners.FileEditorManagerListener"
+                  topic="com.intellij.openapi.fileEditor.FileEditorManagerListener" />
+    </projectListeners>
 </idea-plugin>
