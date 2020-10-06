@@ -18,4 +18,5 @@ object MyBundle : AbstractBundle(BUNDLE) {
     fun messagePointer(@PropertyKey(resourceBundle = BUNDLE) key: String, vararg params: Any) = run {
         message(key, *params)
     }
+
 }

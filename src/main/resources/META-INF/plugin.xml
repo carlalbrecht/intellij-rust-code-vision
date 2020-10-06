@@ -1,11 +1,12 @@
 <idea-plugin>
     <id>com.github.carlalbrecht.intellijrustcodevision</id>
-    <name>intellij-rust-code-vision</name>
-    <vendor>carlalbrecht</vendor>
+    <name>Rust Code Vision</name>
+    <vendor>Carl Albrecht</vendor>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.rust.lang</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.carlalbrecht.intellijrustcodevision.services.MyApplicationService"/>

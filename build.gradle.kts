@@ -31,6 +31,9 @@ val platformType: String by project
 val platformVersion: String by project
 val platformDownloadSources: String by project
 
+val intellijRustPluginVersion: String by project
+val tomlPluginVersion: String by project
+
 group = pluginGroup
 version = pluginVersion
 
@@ -54,8 +57,10 @@ intellij {
 
 //  Plugin Dependencies:
 //  https://www.jetbrains.org/intellij/sdk/docs/basics/plugin_structure/plugin_dependencies.html
-//
-//  setPlugins("java")
+    setPlugins(*listOf(
+        "org.rust.lang:${intellijRustPluginVersion}",
+        "org.toml.lang:${tomlPluginVersion}"
+    ).toTypedArray())
 }
 
 // Configure detekt plugin.
