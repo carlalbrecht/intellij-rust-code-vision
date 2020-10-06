@@ -4,3 +4,5 @@
 formatting:
   Indentation:
     active: true
+  NoBlankLineBeforeRbrace:
+    active: false
