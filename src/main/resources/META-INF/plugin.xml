@@ -21,5 +21,7 @@
     <projectListeners>
         <listener class="com.github.carlalbrecht.intellijrustcodevision.listeners.FileEditorManagerListener"
                   topic="com.intellij.openapi.fileEditor.FileEditorManagerListener" />
+        <listener class="com.github.carlalbrecht.intellijrustcodevision.listeners.PsiTreeChangeListener"
+                  topic="com.intellij.psi.PsiTreeChangeListener" />
     </projectListeners>
 </idea-plugin>
