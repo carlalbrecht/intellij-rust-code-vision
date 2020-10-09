@@ -14,3 +14,11 @@ formatting:
     active: true
   NoBlankLineBeforeRbrace:
     active: false
+  NoWildcardImports:
+    # Some files import enum constants using wildcard imports :)
+    active: false
+
+style:
+  WildcardImport:
+    # Same as formatting.NoWildcardImports
+    active: false

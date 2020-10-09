@@ -42,8 +42,12 @@ repositories {
     mavenCentral()
     jcenter()
 }
+
 dependencies {
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.13.1")
+
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.4.10")
+    implementation("org.reflections:reflections:0.9.12")
 }
 
 // Configure gradle-intellij-plugin plugin.
